@@ -1,23 +1,27 @@
 {
-  "name": "reactpractice",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.18.0",
+    "cors": "^2.8.5",
     "express-mailer": "^0.3.1",
+    "express-session": "^1.15.6",
     "nodemailer": "^4.6.8",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-modal": "^3.6.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.1",
-    "react-weekly-day-picker": "^1.0.3"
+    "express": "^4.16.3",
+    "if-env": "^1.0.4",
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+      "start:prod": "node server.js",
+      "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+      "client": "cd client && npm run start",
+      "install": "cd client && yarn install",
+      "build": "cd client && npm run build",
+      "heroku-postbuild": "npm run build"
   },
   "browserslist": [
     ">0.2%",

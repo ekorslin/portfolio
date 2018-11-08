@@ -4,50 +4,36 @@ import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
 
+
 const About = () => (
   <div>
-    <Hero backgroundImage="./desk.jpg">
-      <h1>e.Korslin</h1>
-      <h5>A Full-Stack Web Developer</h5><br/>
-      <button class="btn info">P O R T F O L I O</button>
-    </Hero>
-    <Container style={{ marginTop: 30 }}>
-      <Row>
-        <Col size="md-1">
-        </Col>
-        <Col size="md-10">
-        <div className="card">
-        <h2>Welcome...</h2><br/>
-          <p>
-            While studying for his MBA at DePaul University in the fall of 2013, Eric was enlightened to the dynamic potential of web development while stuyding under longtime IBM Consultant & Professor of Management - Information Systems, Dr. Sasha Deklava.  Here, Eric's love for coding and development was born.  
-          </p>
-            <p>It was then Eric began to implement a number of Deklava's teachings into daily practice as the Director of Purchasing & Logistics in the healthcare supply space at Chicago-based Centrad Healthcare, LLC. 
-          </p>
-          <p>---</p>
-          <h2 id="initials">EJK</h2>
-          {/* <p>
-            It wasn't long before Eric started to hunger for more technical education on the topic.  In May of 2018, Eric enrolled in the School of Professional Studies at Chicago's Northwestern University in the school's Full-Stack Web Development curricula.  Eric graduated from the program in November of 2018.</p><p id="bottom-p">---</p><br/><br/> */}
+    <h2>About Eric...</h2>
+        {/* <div class="cards-5 section-gray"> */}
+            <div class="container">
+                <div class="row">
+                <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="card card-profile">
+                            <div class="card-avatar">
+                                <a href="#"> <img class="img" src="headshot.jpeg" alt=""/> </a>
+                            </div>
+                            <div class="table">
+                                <h4 class="card-caption">Eric J. Korslin</h4>
+                                <h6 class="category text-muted">Full-Stack Web Devloper</h6>
+                                <p class="card-description"> From a young age, Eric took interest in all things web development while spending countless hours at the family computer creating websites on just about any topic under the sun.  Early stage AOL templates served as his 'canvas'.  Although he chose to major in Psychology at the University of Wisconsin-Madison and to drift somewhat from his passion, his desire to develop never faded.</p><p>In studying for his MBA during the fall of 2013, Eric completed a pre-requisite course in Management Informantion Systems under longtime IBM Consultant & DePaul University Professor, Dr. Sasha Deklava.  Here, Eric's passion for development found new life and his awareness of how it could benefit organizations was awakened.</p>  
+                                <p>In pursuit of more formalized education on the topic, Eric enrolled in Northwestern Unversity's School of Professional Studies Full-Stack Web Development program in May of 2018.  Eric graduated with Full-Stack Certification in November of 2018.</p>
+                                <a href="/contact"><button className="btn-info-2">C O N T A C T</button></a> 
+                        
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1"></div>
+                </div>
+              </div>
+            {/* </div> */}
           </div>
-          
-         
-        </Col>
-       
-        <Col size="md-1">
-        </Col></Row><br/><br/>
-    
-      <div className="row">
-      <div className="col-md-4">
-          <img src="view.jpeg"/>
-      </div>
-      <div className="col-md-4">
-      <img src="phone.jpg"/>
-      </div>
-      <div className="col-md-4">
-      <img src="grad.jpg"/>
-      </div></div>
-
-    </Container>
-  </div>
+        
+ 
 );
 
 export default About;
