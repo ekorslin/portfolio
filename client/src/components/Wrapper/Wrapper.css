@@ -59,7 +59,7 @@ h2 {
 }
 
 body {
-  background-image: URL("bg.png"); 
+  background-image: image-URL("bg.png"); 
 }
 
 .card {
