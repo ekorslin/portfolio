@@ -29,8 +29,8 @@ class Contact extends Component {
 
   submit = (event) => {
     event.preventDefault();
-    (this.refs.name.value  === "" || this.refs.email.value ==="" || this.refs.message.value === "")  ?
-    alert("Sorry.  Message not submitted.  Fortm requires Name, Email, & Message.")
+    (this.refs.name.value  === "" || this.refs.email.value === "" || this.refs.message.value === "")  ?
+    alert("Sorry.  Message not submitted.  Form requires Name, Email, & Message.")
     :
     this.setState({
       modalIsOpen: true,
@@ -43,7 +43,7 @@ class Contact extends Component {
           email: this.refs.email.value,  
           message: this.refs.message.value
       }
-  })}
+  })};
 
 closeModal() {
   this.setState({modalIsOpen: false});
