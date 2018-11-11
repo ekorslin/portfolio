@@ -35,20 +35,20 @@ class Contact extends Component {
     this.setState({
       modalIsOpen: true,
     }) 
-    axios({
-      method: "POST", 
-      url:"/submit", 
-      data: {
-          name: this.refs.name.value,   
-          email: this.refs.email.value,  
-          message: this.refs.message.value
-      }
-  })};
+};
 
 closeModal() {
   this.setState({modalIsOpen: false});
-  this.props.history.push("/")
-};
+  axios({
+    method: "POST", 
+    url:"/submit", 
+    data: {
+        name: this.refs.name.value,   
+        email: this.refs.email.value,  
+        message: this.refs.message.value
+    }
+  // this.props.history.push("/")
+})};
 
   render() {
     return (
