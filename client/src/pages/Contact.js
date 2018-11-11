@@ -37,7 +37,7 @@ class Contact extends Component {
     }) 
     axios({
       method: "POST", 
-      url:"http://localhost:3001/submit", 
+      url:"/submit", 
       data: {
           name: this.refs.name.value,   
           email: this.refs.email.value,  
