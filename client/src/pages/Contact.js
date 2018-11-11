@@ -1,28 +1,54 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Modal from 'react-modal';
 
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
+
+Modal.setAppElement('#root');
 
 class Contact extends Component {
+  constructor() {
+    // super() is called to set the this.props to undefined.
+    super();
+
+  // Setting the component's initial state
+  this.state = {
+    modalIsOpen: false,
+    ariaHideApp: false,
+  }};
+
 
   submit = (event) => {
     event.preventDefault();
+    this.refs.name.value  === "" ?
+    alert("Sorry.  Message not submitted.  Fortm requires Name, Email, & Message.")
+    :
+    this.setState({
+      modalIsOpen: true,
+    }) 
     axios({
       method: "POST", 
       url:"http://localhost:3001/submit", 
       data: {
           name: this.refs.name.value,   
           email: this.refs.email.value,  
-          messsage: this.refs.message.value
+          message: this.refs.message.value
       }
-  }).then((response)=>{
-      if (response.data.msg === 'success'){
-          alert("Message Sent."); 
-          this.resetForm()
-      }else if(response.data.msg === 'fail'){
-          alert("Message failed to send.")
-      }
-  })
-}
+  })}
+
+closeModal() {
+  this.setState({modalIsOpen: false});
+  this.props.history.push("/")
+};
 
   render() {
     return (
@@ -34,7 +60,7 @@ class Contact extends Component {
       <h3>Contact Eric</h3>
       <div className="card"><br/>
      
- <h3>Questions or Comments?</h3><p>---</p><p>Send Eric a quick note.  He will respond to you A.S.A.P.</p>
+ <div id="card-header"><br/><h4>Questions or Comments?</h4></div><p>Send Eric a quick note.  He will respond to you A.S.A.P.</p>
       <form id="form">
        Name:*<br/><input type="text" ref="name"/><br/>
        Email:*<br/><input columns="100" type="email" ref="email"/><br/>
@@ -43,6 +69,24 @@ class Contact extends Component {
       </form><br/></div></div>
       <div className="col-md-2"></div>
       </div><br/>
+
+                 <Modal
+                      isOpen={this.state.modalIsOpen}
+                      onAfterOpen={this.afterOpenModal}
+                      onRequestClose={this.closeModal}
+                      style={customStyles}
+                      contentLabel="Example Modal"
+                    >
+                      <h2 ref={subtitle => this.subtitle = subtitle}>Message Sent!</h2>
+                      <form>
+                        Thank you!!  Eric will be back to you shortly.
+                        <br /><br />
+                        <div className="text-center">
+                          <button className="btn2" onClick={this.closeModal.bind(this)}>C L O S E</button>
+                          <hr />
+                          </div>
+                      </form>
+                  </Modal>
       </div>
     );
   }

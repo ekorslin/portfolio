@@ -1,8 +1,4 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
 
 
 const About = () => (
@@ -15,7 +11,7 @@ const About = () => (
                     <div class="col-md-10">
                         <div class="card card-profile">
                             <div class="card-avatar">
-                                <a href="#"> <img class="img" src="headshot.jpeg" alt=""/> </a>
+                                <img class="img" src="headshot.jpeg" alt=""/> 
                             </div>
                             <div class="table">
                                 <h4 class="card-caption">Eric J. Korslin</h4>

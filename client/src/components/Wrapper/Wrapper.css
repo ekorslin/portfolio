@@ -59,7 +59,7 @@ h2 {
 }
 
 body {
-  background-image: image_url("bg.png"); 
+  background-image: URL("bg.png");
 }
 
 .card {
@@ -70,9 +70,10 @@ body {
   margin-left: auto;
 }
 
-.initials {
+#initials {
   text-align: center;
-  padding-top: -80px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
 .hero {
@@ -89,8 +90,8 @@ body {
 
 h3 {
   font-family: 'Cinzel', serif;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
 input, textarea {
@@ -122,7 +123,9 @@ input, textarea {
 
 form {
   text-align: center;
-  font-family: 'EB Garamond', serif;
+  /* font-family: 'EB Garamond', serif; */
+  font-family: 'Julius Sans One', sans-serif;
+
 
   /* margin-left: 25px; */
 }
@@ -381,7 +384,6 @@ CARDS
   display: block;
   left: 0;
   top: 0;
-  table: "";
   background-color: rgba(0, 0, 0, 0.56);
   border-radius: 0px;
 }
@@ -1123,4 +1125,15 @@ h6 {
   font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
 
+}
+
+#card-header {
+    font-family: 'Cinzel', serif;
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+}
+
+#bird {
+  size: 10%;
 }

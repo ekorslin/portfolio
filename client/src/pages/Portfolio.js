@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-// import API from "../utils/API";
-import Container from "../components/Container";
-import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/SearchResults";
-import Alert from "../components/Alert";
 
 class Portfolio extends Component {
 
@@ -17,9 +12,8 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <a href="#"> <img class="img" src="bryant.jpg" alt=""/>
+                                <img class="img" src="bryant.jpg" alt=""/>
                                     <div class="card-caption"> Cubs Talk! </div>
-                                </a>
                             </div>
                             <div class="table">
                                 <h6>Cheerio Scrape</h6>
@@ -31,9 +25,8 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <a href="https://morning-coast-79159.herokuapp.com/"> <img class="img" src="golf.jpg" alt="golf"/>
+                                <img class="img" src="golf.jpg" alt="golf"/>
                                     <div class="card-caption">Beaver Creek</div>
-                                </a>
                             </div>
                             <div class="table">
                                 <h6>React.JS</h6>
@@ -45,9 +38,8 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <a href="#"> <img class="img" src="burger.jpg" alt=""/>
+                                <img class="img" src="burger.jpg" alt=""/>
                                     <div class="card-caption"> Eat-Da-Burger</div>
-                                </a>
                             </div>
                             <div class="table">
                                 <h6>Handlebars</h6>
@@ -65,9 +57,8 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <a href="#"> <img class="img" src="waiter.jpg" alt=""/>
+                                <img class="img" src="waiter.jpg" alt=""/>
                                     <div class="card-caption"> What's for Dinner? </div>
-                                </a>
                             </div>
                             <div class="table">
                                 <h6>Yelp! API</h6>
@@ -79,9 +70,8 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <a href="#"> <img class="img" src="online-shop.png" alt=""/>
+                                <img class="img" src="online-shop.png" alt=""/>
                                     <div class="card-caption">Bamazon</div>
-                                </a>
                             </div>
                             <div class="table">
                                 <h6>MySQL w/ Node.JS</h6>
@@ -93,9 +83,8 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <a href="#"> <img class="img" src="birthday.png" alt=""/>
+                                <img class="img" src="birthday.png" alt=""/>
                                     <div class="card-caption"> Birthday Headlines</div>
-                                </a>
                             </div>
                             <div class="table">
                                 <h6>HTML, CSS, JavaScript</h6>

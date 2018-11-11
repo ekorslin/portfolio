@@ -20,12 +20,12 @@ const About = () => (
         <div className="card">
         <h2>Welcome...</h2><br/>
           <p>
-            While studying for his MBA at DePaul University in the fall of 2013, Eric was enlightened to the dynamic potential of web development while stuyding under longtime IBM Consultant & Professor of Management - Information Systems, Dr. Sasha Deklava.  Here, Eric's love for coding and development was born.  
+            With Full-Stack Certification from Northwestern University in Chicago, IL, Eric is excited to showcase his abilities through this site as he goes about his search for exciting employment opportunities in development.</p><p>The most coveted place of employment for Eric would be one that offers both engaging projects for him to help build out, and the chance for him to grow individually into an even more skilled developer.   
           </p>
-            <p>It was then Eric began to implement a number of Deklava's teachings into daily practice as the Director of Purchasing & Logistics in the healthcare supply space at Chicago-based Centrad Healthcare, LLC. 
+            <p>That said, please don't hesitate to look around -- do reach out with any questions/comments.  Thanks for visiting!
           </p>
           <p>---</p>
-          <h2 id="initials">EJK</h2>
+          <div id="initials"><h3>Eric J. Korslin</h3></div><br/>
           {/* <p>
             It wasn't long before Eric started to hunger for more technical education on the topic.  In May of 2018, Eric enrolled in the School of Professional Studies at Chicago's Northwestern University in the school's Full-Stack Web Development curricula.  Eric graduated from the program in November of 2018.</p><p id="bottom-p">---</p><br/><br/> */}
           </div>

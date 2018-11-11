@@ -4,24 +4,27 @@
   "private": true,
   "main": "server.js",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "axios": "^0.18.0",
+    "concurrently": "^3.5.0",
     "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
     "express-mailer": "^0.3.1",
     "express-session": "^1.15.6",
-    "nodemailer": "^4.6.8",
-    "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "nodemailer": "^4.6.8",
+    "nodemon": "^1.11.0",
+    "react-modal": "^3.6.1"
   },
   "scripts": {
-      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-      "start:prod": "node server.js",
-      "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-      "client": "cd client && npm run start",
-      "install": "cd client && yarn install",
-      "build": "cd client && npm run build",
-      "heroku-postbuild": "npm run build"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && yarn install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "browserslist": [
     ">0.2%",

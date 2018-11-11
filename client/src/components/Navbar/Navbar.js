@@ -48,8 +48,8 @@ const Navbar = props => (
     <span className="navbar-text ml-auto">
     <a href="https://github.com/ekorslin"><i className="fab fa-github"></i></a><a href="https://www.linkedin.com/in/eric-korslin-06144b37/"><i className="fab fa-linkedin"></i></a><a href="https://www.facebook.com/eric.korslin.54"><i className="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/ekorslin2/"><i className="fab fa-instagram"></i></a><a href="https://twitter.com/EricKorslin"><i className="fab fa-twitter"></i></a>
    </span>
-
   </nav>
+
 );
 
 export default Navbar;
