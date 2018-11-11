@@ -12,7 +12,7 @@ router.post('/submit', (req, res, next) => {
   var content = `From: ${name} <br/> email: ${email} <br/> message: ${message} `
 
 
-sgMail.setApiKey('process.env.SENDGRID_API_KEY');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
   to: 'eric.korslin@gmail.com',
   from: 'eric.korslin@gmail.com',
