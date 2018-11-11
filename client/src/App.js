@@ -7,14 +7,20 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./pages/Portfolio";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
+import Image from './bg.png';
 
+const styles = {
+  background: {
+    backgroundImage: `url(${"bg.png"})`
+  } 
 
+}
 
 const App = () => (
   <Router>
     <div>
       <Navbar />
-      <Wrapper>
+      <Wrapper style={styles.background}>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio" component={Portfolio} />
