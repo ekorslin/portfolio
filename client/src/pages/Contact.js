@@ -29,7 +29,7 @@ class Contact extends Component {
 
   submit = (event) => {
     event.preventDefault();
-    this.refs.name.value  === "" ?
+    (this.refs.name.value  === "" || this.refs.email.value ==="" || this.refs.message.value === "")  ?
     alert("Sorry.  Message not submitted.  Fortm requires Name, Email, & Message.")
     :
     this.setState({
