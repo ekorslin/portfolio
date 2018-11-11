@@ -58,7 +58,7 @@ h2 {
   padding-left: 60px;
 }
 
-body {
+.wrapper {
   background-image: URL("./bg.png");
 }
 
