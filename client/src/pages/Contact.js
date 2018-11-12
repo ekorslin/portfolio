@@ -26,29 +26,29 @@ class Contact extends Component {
     ariaHideApp: false,
   }};
 
-
   submit = (event) => {
     event.preventDefault();
-    (this.refs.name.value  === "" || this.refs.email.value === "" || this.refs.message.value === "")  ?
-    alert("Sorry.  Message not submitted.  Form requires Name, Email, & Message.")
-    :
-    this.setState({
-      modalIsOpen: true,
-    }) 
-};
+    if (this.refs.name.value === "" || this.refs.email.value === "" || this.refs.message.value === "") {
+      alert("Sorry.  Message not submitted.  Form requires Name, Email, & Message.")
+    } else {
+      this.setState({ modalIsOpen: true });
+      axios.get({
+        method: "POST", 
+        url: "/submit", 
+        data: {
+          name: this.refs.name.value,   
+          email: this.refs.email.value,  
+          message: this.refs.message.value
+        }
+      });
+    }
+  };
+
 
 closeModal() {
   this.setState({modalIsOpen: false});
-  axios({
-    method: "POST", 
-    url:"/submit", 
-    data: {
-        name: this.refs.name.value,   
-        email: this.refs.email.value,  
-        message: this.refs.message.value
-    }
-  // this.props.history.push("/")
-})};
+  this.props.history.push("/")
+};
 
   render() {
     return (
