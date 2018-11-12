@@ -32,7 +32,8 @@ class Contact extends Component {
       alert("Sorry.  Message not submitted.  Form requires Name, Email, & Message.")
     } else {
       this.setState({ modalIsOpen: true });
-      axios.get({
+      console.log(this.refs.name.value);
+      axios({
         method: "POST", 
         url: "/submit", 
         data: {
