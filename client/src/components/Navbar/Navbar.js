@@ -17,7 +17,7 @@ class Navbar extends Component {
     return (
 
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    <div className="d-flex navbar-wide">
+    <div className="navbar-wide flex-container">
     <Link className="navbar-brand" to="/">
       e.Korslin
     </Link>
