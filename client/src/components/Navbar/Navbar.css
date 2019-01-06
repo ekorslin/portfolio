@@ -119,8 +119,11 @@ button {
     }
 
     .navbar-text {
-      padding-left: 80%;
       display: flex;
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+      /* margin-right: 20px; */
     }
   }
 
