@@ -1137,3 +1137,8 @@ h6 {
 #bird {
   size: 10%;
 }
+
+#toggle {
+  width: 8%;
+  box-shadow: 0px 0px 0px white;
+}
