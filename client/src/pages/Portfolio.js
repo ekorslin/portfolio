@@ -83,13 +83,13 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <img class="img" src="birthday.png" alt=""/>
-                                    <div class="card-caption"> Birthday Headlines</div>
+                                <img class="img" src="fitness.jpg" alt=""/>
+                                    <div class="card-caption"> My Fitness App</div>
                             </div>
                             <div class="table">
-                                <h6>HTML, CSS, JavaScript</h6>
-                                <p class="card-description"> Fun facts from your first day in history are revealed through this fun app and its links to the NYTimes historic API. </p>
-                                <a href="https://patrickcorcoran10.github.io/Project-1/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <h6>React.JS, MySQL, JSX</h6>
+                                <p class="card-description"> Built specifically for use on a mobile device, the My Fitness App tracks & trends all fitness-related goals for the user. </p>
+                                <a href="https://whispering-cove-15215.herokuapp.com/routine" target="_blank"><button className="btn-info-2">V I E W</button></a> 
 
                                 
                             </div>
