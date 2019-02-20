@@ -70,13 +70,13 @@ class Portfolio extends Component {
                     <div class="col-md-4">
                         <div class="card card-profile">
                             <div class="card-image">
-                                <img class="img" src="online-shop.png" alt=""/>
-                                    <div class="card-caption">Bamazon</div>
+                                <img classname="img" src="blackii.png" alt="hornet helmet"/>
+                                    <div class="card-caption">Hornet History</div>
                             </div>
                             <div class="table">
-                                <h6>MySQL w/ Node.JS</h6>
-                                <p class="card-description">Online shop allows customers to buy products, supervisors to manage inventory & Sales Dept. to track sales metrics. </p>
-                                <button class="btn-info-2">V I E W</button> 
+                                <h6>React.JS w/ MySQL</h6>
+                                <p class="card-description">Brush up on all things Hittin' Hornet Football with this full-stack application written in React.JS and MySQL.</p>
+                                <a href="https://stormy-peak-15355.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
                             </div>
                         </div>
                     </div>
