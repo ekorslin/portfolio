@@ -18,7 +18,7 @@ class Portfolio extends Component {
                             <div class="table">
                                 <h6>Cheerio Scrape</h6>
                                 <p class="card-description"> Heroku-deployed application allows users to stay current on all Chicago Cub-related headlines.</p>
-                                <a href="https://secure-garden-47540.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <a href="https://cubsheadlinescrape.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ class Portfolio extends Component {
                             <div class="table">
                                 <h6>React.JS</h6>
                                 <p class="card-description"> Enhanced Full-Stack app now allows potential golfers to book tee-times thorugh the site. </p>
-                                <a href="https://morning-coast-79159.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <a href="https://beavercreek.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@ class Portfolio extends Component {
                             <div class="table">
                                 <h6>Handlebars</h6>
                                 <p class="card-description"> Eat-Da-Burger is your burger bucket list, of sorts.  Track all your burger conquests, to date. </p>
-                                <a href="https://thawing-beach-52915.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <a href="https://burgerbucketlist.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ class Portfolio extends Component {
                             <div class="table">
                                 <h6>Yelp! API</h6>
                                 <p class="card-description"> Taps into the Yelp! API to arrive at list of suggested restaurants local to user based on craving considerations.</p>
-                                <a href="https://lit-stream-91450.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <a href="https://lit-stream-91450.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ class Portfolio extends Component {
                             <div class="table">
                                 <h6>React.JS w/ MySQL</h6>
                                 <p class="card-description">Brush up on all things Hittin' Hornet Football with this full-stack application written in React.JS and MySQL.</p>
-                                <a href="https://stormy-peak-15355.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <a href="https://hittinhornets.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a>
                             </div>
                         </div>
                     </div>
@@ -89,9 +89,9 @@ class Portfolio extends Component {
                             <div class="table">
                                 <h6>React.JS, MySQL, JSX</h6>
                                 <p class="card-description"> Built specifically for use on a mobile device, the My Fitness App tracks & trends all fitness-related goals for the user. </p>
-                                <a href="https://whispering-cove-15215.herokuapp.com/routine" target="_blank"><button className="btn-info-2">V I E W</button></a> 
+                                <a href="https://my-fitness.herokuapp.com/routine" target="_blank"><button className="btn-info-2">V I E W</button></a>
 
-                                
+
                             </div>
                         </div>
                     </div>
