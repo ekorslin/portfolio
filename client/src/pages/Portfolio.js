@@ -30,7 +30,7 @@ class Portfolio extends Component {
                             </div>
                             <div class="table">
                                 <h6>React.JS</h6>
-                                <p class="card-description"> Enhanced Full-Stack app now allows potential golfers to book tee-times thorugh the site. </p>
+                                <p class="card-description"> Enhanced Full-Stack app now allows golfers to summon the beverage cart, keep score, etc.. </p>
                                 <a href="https://beavercreek.herokuapp.com/" target="_blank"><button className="btn-info-2">V I E W</button></a>
                             </div>
                         </div>
