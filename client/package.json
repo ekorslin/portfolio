@@ -5,7 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "express-mailer": "^0.3.1",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-modal": "^3.6.1",
